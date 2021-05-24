@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import InfoBox from "./Components/InfoBox";
 import LineGraph from "./Components/LineGraph";
-import Map from "./Components/Map";
+import Maps from "./Components/Map";
 import Table from "./Components/Table";
 import { sortData } from "./Components/Util";
 
@@ -96,7 +96,7 @@ function App() {
             total={countryInfo.deaths}
           />
         </div>
-        <Map />
+        <Maps />
       </div>
       <Card className="app_right">
         <CardContent>
