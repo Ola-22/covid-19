@@ -1,3 +1,4 @@
+import numeral from "numeral";
 import "./style.css";
 
 export default function Table({ countries }) {
@@ -6,7 +7,9 @@ export default function Table({ countries }) {
       {countries.map(({ country, cases }, index) => (
         <tr key={index}>
           <td>{country}</td>
-          <td>{cases}</td>
+          <td>
+            <strong>{numeral(cases).format("0, 0")}</strong>
+          </td>
         </tr>
       ))}
     </div>
